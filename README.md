@@ -34,6 +34,9 @@ Tenho interesse em aprender, resolver problemas e entender não apenas o desenvo
 
 ## 🔗 Onde me encontrar
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/marcos-erculiani-50b95a320/)
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visitar-black?style=for-the-badge&logo=github)](https://marcoserculianipw.github.io/marcos-portifolio/)
+<a href="https://www.linkedin.com/in/marcos-erculiani-50b95a320/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://marcoserculianipw.github.io/marcos-portifolio/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-Acessar-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>

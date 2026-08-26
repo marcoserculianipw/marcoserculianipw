@@ -27,6 +27,17 @@ Tenho interesse em aprender, resolver problemas e entender não apenas o desenvo
   <img src="https://skillicons.dev/icons?i=git,github,vscode" />
 </p>
 
+## 💼 Experiência
+
+**Jovem Aprendiz — Intercarta**  
+📍 São José dos Campos, SP
+
+- 📦 Apoio em processos de logística e agendamento de transportes
+- 📄 Organização de documentos, notas fiscais e boletos
+- 🖥️ Utilização de sistemas internos e TOTVS
+- 📊 Apoio em processos administrativos e operacionais
+- 🔎 Contato com rotinas e processos de uma empresa
+
 ### 📚 Conhecimentos complementares
 
 - 📊 Power BI

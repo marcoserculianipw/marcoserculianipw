@@ -12,15 +12,29 @@ Tenho interesse em aprender, resolver problemas e entender não apenas o desenvo
 
 ## 🛠️ Tecnologias e conhecimentos
 
-- 💻 Desenvolvimento de Sistemas
-- 🗄️ MySQL e Bancos de Dados
-- 🌐 HTML, CSS e JavaScript
-- ⚛️ React / React Native
-- 📊 Power BI
-- 🔧 Git e GitHub
-- 🖥️ Sistemas Operacionais
-- 📑 Microsoft Office
+### 💻 Desenvolvimento
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,python,react" />
+</p>
 
+### 🗄️ Banco de Dados
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql" />
+</p>
+
+### 🔧 Ferramentas
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+### 📚 Conhecimentos complementares
+
+- 📊 Power BI
+- 🧩 Power Apps — conhecimentos básicos
+- 🏢 TOTVS — conhecimentos básicos
+- 📑 Microsoft Office
+- 🖥️ Sistemas Operacionais
+- 🗃️ Bancos de Dados
 ---
 
 ## 🚀 Atualmente

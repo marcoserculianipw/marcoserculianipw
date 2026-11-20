@@ -1,73 +1,35 @@
-# 👋 Olá, eu sou Marcos Erculiani
+## Marcos Erculiani
 
-🎓 Estudante de **Desenvolvimento de Software Multiplataforma (DSM)** na FATEC  
-💻 Técnico em **Desenvolvimento de Sistemas** pela ETEC  
-🚀 Interessado em **Desenvolvimento de Software, TI e Operações de TI**
+Estudante de **Desenvolvimento de Software Multiplataforma** (FATEC) e técnico em **Desenvolvimento de Sistemas** (ETEC).  
+Focado em **Desenvolvimento Web, Automação e TI** — construindo soluções práticas para problemas reais.
 
-Atualmente estou aprimorando meus conhecimentos em tecnologia através de projetos acadêmicos e pessoais, buscando transformar conhecimento em soluções práticas.
-
-Tenho interesse em aprender, resolver problemas e entender não apenas o desenvolvimento de sistemas, mas também como a tecnologia funciona dentro das empresas.
+`São José dos Campos, SP`
 
 ---
 
-## 🛠️ Tecnologias e conhecimentos
+**Stack**
 
-### 💻 Desenvolvimento
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,react" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,python,nodejs,php,react,mysql,linux,git,github,vscode&perline=12" height="32" />
 </p>
 
-### 🗄️ Banco de Dados
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql" />
-</p>
-
-### 🔧 Ferramentas
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
-</p>
+`Power BI` · `TOTVS` · `Power Apps`
 
 ---
 
-## 💼 Experiência
+**Projetos**
 
-### 🏢 Intercarta — Jovem Aprendiz
-
-📍 São José dos Campos, SP
-
-- 📦 Apoio em processos de logística e agendamento de transportes
-- 📄 Organização de documentos, notas fiscais e boletos
-- 🖥️ Utilização de sistemas internos e TOTVS
-- 📊 Apoio em processos administrativos e operacionais
-
-<br>
+- **[AdaptIA](https://github.com/SEU-USUARIO/LINK-DO-REPO)** — Plataforma web inclusiva com IA para atividades adaptadas (`Node.js` · `Gemini API`)
+- **[FNCASH](https://github.com/SEU-USUARIO/LINK-DO-REPO)** — Sistema de gestão financeira pessoal (`PHP` · `MySQL`)
+- **Recebimento PWA** — Controle digital de recebimento logístico (`PWA`)
 
 ---
 
-### 📚 Conhecimentos complementares
+**Experiência**
 
-- 📊 Power BI
-- 🧩 Power Apps — conhecimentos básicos
-- 🏢 TOTVS — conhecimentos básicos
-- 📑 Microsoft Office
-- 🖥️ Sistemas Operacionais
-- 🗃️ Bancos de Dados
----
-
-## 🚀 Atualmente
-
-🎓 Cursando DSM na FATEC  
-💡 Desenvolvendo projetos acadêmicos e pessoais  
-📚 Aprimorando meus conhecimentos em Desenvolvimento e TI  
-🎯 Buscando oportunidades para iniciar minha carreira na área de Tecnologia
+- **Positivo S.A.** — Automação & TI
+- **Intercarta** — Jovem Aprendiz em Logística Administrativa (`Power BI` · `TOTVS` · `PWA`)
 
 ---
 
-## 🔗 Onde me encontrar
-
-<a href="https://www.linkedin.com/in/marcos-erculiani-50b95a320/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://marcoserculianipw.github.io/marcos-portifolio/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-Acessar-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
+[LinkedIn](https://www.linkedin.com/in/marcos-erculiani-50b95a320/) · [Portfólio](https://marcoserculianipw.github.io/marcos-portifolio/)

@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" role="img" aria-label="Marcos Erculiani — Terminal e Robozinho Programando">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0b1018"/>
+    </linearGradient>
+
+    <linearGradient id="robotBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27303d"/>
+      <stop offset="100%" stop-color="#171d26"/>
+    </linearGradient>
+
+    <linearGradient id="laptopLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242d3a"/>
+      <stop offset="100%" stop-color="#161c24"/>
+    </linearGradient>
+
+    <radialGradient id="screenGlow" cx="50%" cy="65%" r="55%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="screenLightBeam" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="dotGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#58a6ff" fill-opacity="0.10"/>
+    </pattern>
+
+    <filter id="cyanGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="greenGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="cardClip">
+      <rect x="2" y="2" width="856" height="296" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    /* Terminal cursor blink */
+    .cursor {
+      animation: cursorBlink 1.05s steps(2, start) infinite;
+    }
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* Status LED pulse */
+    .pulse-led {
+      animation: ledPulse 2.2s ease-in-out infinite;
+    }
+    @keyframes ledPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    /* Robot subtle float / breathing */
+    .robot-float {
+      animation: robotFloat 3.4s ease-in-out infinite;
+    }
+    @keyframes robotFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-2.5px); }
+    }
+
+    /* Robot eyes blink */
+    .robot-eyes {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: eyeBlink 4.6s ease-in-out infinite;
+    }
+    @keyframes eyeBlink {
+      0%, 44%, 48%, 92%, 96%, 100% { transform: scaleY(1); }
+      46%, 94% { transform: scaleY(0.12); }
+    }
+
+    /* Typing hands alternating */
+    .hand-left {
+      animation: typeLeft 0.34s ease-in-out infinite alternate;
+    }
+    .hand-right {
+      animation: typeRight 0.34s ease-in-out 0.17s infinite alternate;
+    }
+    @keyframes typeLeft {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(3.2px); }
+    }
+    @keyframes typeRight {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(3.2px); }
+    }
+
+    /* Floating holo cards */
+    .chip-left {
+      animation: floatSlow 4.2s ease-in-out infinite;
+    }
+    .chip-right {
+      animation: floatSlow 4.2s ease-in-out 1.4s infinite;
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+
+    /* Animated code bars inside holo chips */
+    .code-bar-1 { animation: barPulse 2.4s ease-in-out infinite; }
+    .code-bar-2 { animation: barPulse 2.4s ease-in-out 0.4s infinite; }
+    .code-bar-3 { animation: barPulse 2.4s ease-in-out 0.8s infinite; }
+    @keyframes barPulse {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.35; }
+    }
+
+    /* Coffee steam */
+    .steam-1 { animation: steamRise 2.6s ease-in-out infinite; }
+    .steam-2 { animation: steamRise 2.6s ease-in-out 0.9s infinite; }
+    @keyframes steamRise {
+      0% { transform: translateY(3px); opacity: 0; }
+      45% { opacity: 0.55; }
+      100% { transform: translateY(-6px); opacity: 0; }
+    }
+
+    /* Mini server LEDs */
+    .srv-led-1 { animation: srvBlink 1.3s steps(2, start) infinite; }
+    .srv-led-2 { animation: srvBlink 0.9s steps(2, start) 0.4s infinite; }
+    @keyframes srvBlink {
+      0%, 60% { opacity: 1; }
+      61%, 100% { opacity: 0.25; }
+    }
+
+    /* Terminal typing line subtle reveal loop */
+    .term-dot {
+      animation: dotPulse 1.6s ease-in-out infinite;
+    }
+    .term-dot-2 { animation-delay: 0.3s; }
+    .term-dot-3 { animation-delay: 0.6s; }
+    @keyframes dotPulse {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Main Card Container -->
+  <g clip-path="url(#cardClip)">
+    <rect x="2" y="2" width="856" height="296" rx="14" fill="url(#bgGrad)"/>
+
+    <!-- Subtle dot grid on right stage -->
+    <rect x="530" y="38" width="328" height="260" fill="url(#dotGrid)"/>
+
+    <!-- Ambient glow behind robot setup -->
+    <ellipse cx="694" cy="185" rx="135" ry="95" fill="url(#screenGlow)"/>
+
+    <!-- Top Window Bar -->
+    <rect x="2" y="2" width="856" height="36" fill="#161b22"/>
+    <line x1="2" y1="38" x2="858" y2="38" stroke="#21262d" stroke-width="1"/>
+
+    <!-- Window traffic lights -->
+    <circle cx="24" cy="20" r="5" fill="#ff5f56" fill-opacity="0.9"/>
+    <circle cx="40" cy="20" r="5" fill="#ffbd2e" fill-opacity="0.9"/>
+    <circle cx="56" cy="20" r="5" fill="#27c93f" fill-opacity="0.9"/>
+
+    <!-- Window title -->
+    <text x="80" y="24" fill="#8b949e" font-size="11.5" class="mono">marcos@fatec: ~/workspace — zsh</text>
+
+    <!-- Status pill in titlebar -->
+    <rect x="708" y="10" width="134" height="20" rx="10" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <circle cx="722" cy="20" r="3.2" fill="#3fb950" filter="url(#greenGlow)" class="pulse-led"/>
+    <text x="732" y="23.5" fill="#8b949e" font-size="9.5" letter-spacing="0.6" class="mono">ONLINE · CODING</text>
+
+    <!-- Split vertical divider -->
+    <line x1="530" y1="38" x2="530" y2="298" stroke="#21262d" stroke-width="1"/>
+
+    <!-- ================= LEFT PANE: TERMINAL ================= -->
+    <g class="mono" font-size="12.5">
+      <!-- Line 1: whoami -->
+      <text x="26" y="72"><tspan fill="#3fb950">❯ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
+      <text x="26" y="94"><tspan fill="#58a6ff" font-weight="600">Marcos Erculiani</tspan><tspan fill="#8b949e"> · DSM @ FATEC · Dev @ ETEC</tspan></text>
+
+      <!-- Line 2: cat profile.json -->
+      <text x="26" y="126"><tspan fill="#3fb950">❯ </tspan><tspan fill="#e6edf3">cat profile.json</tspan></text>
+
+      <text x="26" y="148" fill="#8b949e">{</text>
+      <text x="42" y="168"><tspan fill="#79c0ff">"focus"</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#a5d6ff">"Web, Automação &amp; TI"</tspan><tspan fill="#8b949e">,</tspan></text>
+      <text x="42" y="188"><tspan fill="#79c0ff">"stack"</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#d2a8ff">["Python", "Node.js", "TS", "SQL"]</tspan><tspan fill="#8b949e">,</tspan></text>
+      <text x="42" y="208"><tspan fill="#79c0ff">"base"</tspan><tspan fill="#8b949e">:  </tspan><tspan fill="#a5d6ff">"São José dos Campos, SP"</tspan></text>
+      <text x="26" y="228" fill="#8b949e">}</text>
+
+      <!-- Line 3: live status -->
+      <text x="26" y="258"><tspan fill="#3fb950">❯ </tspan><tspan fill="#e6edf3">./workspace --watch</tspan></text>
+      <text x="26" y="280"><tspan fill="#3fb950">✓ </tspan><tspan fill="#c9d1d9">building practical solutions</tspan><tspan fill="#58a6ff" class="term-dot">.</tspan><tspan fill="#58a6ff" class="term-dot term-dot-2">.</tspan><tspan fill="#58a6ff" class="term-dot term-dot-3">.</tspan></text>
+      <!-- Blinking terminal cursor -->
+      <rect x="284" y="268" width="7.5" height="14" rx="1.5" fill="#58a6ff" class="cursor"/>
+    </g>
+
+    <!-- ================= RIGHT PANE: ROBOT CODER ================= -->
+
+    <!-- Floating Code Chip Left -->
+    <g class="chip-left">
+      <rect x="548" y="82" width="76" height="52" rx="8" fill="#131922" stroke="#283240" stroke-width="1"/>
+      <circle cx="557" cy="91" r="2" fill="#30363d"/>
+      <circle cx="564" cy="91" r="2" fill="#30363d"/>
+      <circle cx="571" cy="91" r="2" fill="#30363d"/>
+      <line x1="549" y1="97" x2="623" y2="97" stroke="#21262d" stroke-width="1"/>
+      <rect x="556" y="104" width="24" height="3.5" rx="1.75" fill="#58a6ff" class="code-bar-1"/>
+      <rect x="584" y="104" width="18" height="3.5" rx="1.75" fill="#30363d"/>
+      <rect x="562" y="113" width="34" height="3.5" rx="1.75" fill="#3fb950" class="code-bar-2"/>
+      <rect x="562" y="122" width="22" height="3.5" rx="1.75" fill="#d2a8ff" class="code-bar-3"/>
+      <rect x="588" y="122" width="26" height="3.5" rx="1.75" fill="#30363d"/>
+    </g>
+
+    <!-- Floating Code Chip Right -->
+    <g class="chip-right">
+      <rect x="764" y="92" width="76" height="52" rx="8" fill="#131922" stroke="#283240" stroke-width="1"/>
+      <text x="773" y="108" fill="#3fb950" font-size="9" class="mono">● build</text>
+      <rect x="773" y="116" width="58" height="4" rx="2" fill="#21262d"/>
+      <rect x="773" y="116" width="44" height="4" rx="2" fill="#58a6ff" class="code-bar-2"/>
+      <text x="773" y="135" fill="#8b949e" font-size="8.5" class="mono">git push ✓</text>
+    </g>
+
+    <!-- Cute Minimalist Coding Robot -->
+    <g class="robot-float">
+      <!-- Antenna -->
+      <line x1="694" y1="64" x2="694" y2="82" stroke="#485568" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="694" cy="61" r="4.5" fill="#3fb950" filter="url(#greenGlow)" class="pulse-led"/>
+
+      <!-- Ear pods -->
+      <rect x="640" y="102" width="8" height="22" rx="4" fill="#1e2631" stroke="#384454" stroke-width="1.2"/>
+      <rect x="740" y="102" width="8" height="22" rx="4" fill="#1e2631" stroke="#384454" stroke-width="1.2"/>
+      <circle cx="644" cy="113" r="1.6" fill="#58a6ff"/>
+      <circle cx="744" cy="113" r="1.6" fill="#58a6ff"/>
+
+      <!-- Head -->
+      <rect x="648" y="82" width="92" height="62" rx="20" fill="url(#robotBody)" stroke="#3b4758" stroke-width="1.5"/>
+
+      <!-- Visor -->
+      <rect x="659" y="93" width="70" height="40" rx="12" fill="#090d13" stroke="#1f3a5c" stroke-width="1.2"/>
+      <!-- Subtle visor glass sheen -->
+      <path d="M 667 97 L 682 97 L 672 108 L 664 108 Z" fill="#58a6ff" fill-opacity="0.09"/>
+
+      <!-- Eyes (blinking) -->
+      <g class="robot-eyes" filter="url(#cyanGlow)">
+        <rect x="674" y="104" width="11" height="13" rx="5.5" fill="#58a6ff"/>
+        <rect x="703" y="104" width="11" height="13" rx="5.5" fill="#58a6ff"/>
+        <!-- Tiny eye catchlights -->
+        <circle cx="677.5" cy="108" r="1.8" fill="#dbeeff"/>
+        <circle cx="706.5" cy="108" r="1.8" fill="#dbeeff"/>
+      </g>
+
+      <!-- Subtle minimal smile -->
+      <path d="M 687 124 Q 694 128.5 701 124" fill="none" stroke="#58a6ff" stroke-width="1.7" stroke-linecap="round" opacity="0.85"/>
+
+      <!-- Neck -->
+      <rect x="684" y="144" width="20" height="8" rx="3" fill="#212936" stroke="#384454" stroke-width="1"/>
+
+      <!-- Torso -->
+      <rect x="658" y="152" width="72" height="54" rx="16" fill="url(#robotBody)" stroke="#384454" stroke-width="1.5"/>
+      <!-- Chest panel accent -->
+      <rect x="676" y="166" width="36" height="14" rx="5" fill="#0d1117" stroke="#283240" stroke-width="1"/>
+      <rect x="682" y="171.5" width="14" height="3" rx="1.5" fill="#58a6ff" opacity="0.9"/>
+      <circle cx="704" cy="173" r="2.2" fill="#3fb950" class="pulse-led"/>
+
+      <!-- Left shoulder/arm -->
+      <path d="M 658 168 Q 642 178 648 202" fill="none" stroke="#303b4a" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 658 168 Q 642 178 648 202" fill="none" stroke="#445266" stroke-width="1.2" stroke-linecap="round"/>
+
+      <!-- Right shoulder/arm -->
+      <path d="M 730 168 Q 746 178 740 202" fill="none" stroke="#303b4a" stroke-width="9" stroke-linecap="round"/>
+      <path d="M 730 168 Q 746 178 740 202" fill="none" stroke="#445266" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Upward soft screen glow onto robot -->
+    <polygon points="656,198 732,198 748,162 640,162" fill="url(#screenLightBeam)"/>
+
+    <!-- Animated typing hands peeking right at laptop sides -->
+    <g class="hand-left">
+      <rect x="642" y="198" width="16" height="11" rx="5.5" fill="#2b3544" stroke="#58a6ff" stroke-opacity="0.45" stroke-width="1.2"/>
+    </g>
+    <g class="hand-right">
+      <rect x="730" y="198" width="16" height="11" rx="5.5" fill="#2b3544" stroke="#58a6ff" stroke-opacity="0.45" stroke-width="1.2"/>
+    </g>
+
+    <!-- Laptop (front-facing back lid) -->
+    <rect x="649" y="198" width="90" height="46" rx="6" fill="url(#laptopLid)" stroke="#3e4b5e" stroke-width="1.4"/>
+    <!-- Laptop top glow strip -->
+    <line x1="654" y1="199.5" x2="734" y2="199.5" stroke="#58a6ff" stroke-opacity="0.45" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Minimalist code emblem on laptop lid -->
+    <text x="694" y="225" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="600" opacity="0.9" class="mono">&lt;/&gt;</text>
+    <!-- Laptop base lip -->
+    <rect x="639" y="243" width="110" height="5" rx="2.5" fill="#30363d"/>
+
+    <!-- Mini Server / Hardware Node on Left Desk -->
+    <g>
+      <rect x="568" y="228" width="44" height="20" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+      <line x1="575" y1="235" x2="592" y2="235" stroke="#30363d" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="575" y1="241" x2="588" y2="241" stroke="#30363d" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="601" cy="235" r="2" fill="#3fb950" class="srv-led-1"/>
+      <circle cx="601" cy="241" r="2" fill="#58a6ff" class="srv-led-2"/>
+    </g>
+
+    <!-- Minimalist Coffee Mug on Right Desk -->
+    <g>
+      <!-- Steam wisps -->
+      <path d="M 786 218 Q 783 212 787 206" fill="none" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round" class="steam-1"/>
+      <path d="M 794 218 Q 797 211 793 204" fill="none" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round" class="steam-2"/>
+      <!-- Mug handle -->
+      <path d="M 802 229 C 810 229 810 242 802 242" fill="none" stroke="#3e4b5e" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- Mug body -->
+      <rect x="778" y="224" width="24" height="24" rx="4" fill="#1d242f" stroke="#3e4b5e" stroke-width="1.2"/>
+      <line x1="783" y1="236" x2="797" y2="236" stroke="#58a6ff" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Desk surface -->
+    <rect x="554" y="248" width="280" height="5" rx="2.5" fill="#21262d"/>
+    <line x1="556" y1="248.5" x2="832" y2="248.5" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Subtle caption under desk -->
+    <text x="694" y="276" text-anchor="middle" fill="#6e7681" font-size="10.5" class="mono">bot.dev · compiling ideas into code</text>
+  </g>
+
+  <!-- Crisp outer border -->
+  <rect x="2" y="2" width="856" height="296" rx="14" fill="none" stroke="#30363d" stroke-width="1.2"/>
+</svg>
